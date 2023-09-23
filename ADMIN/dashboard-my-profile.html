@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Themify Icons -->
+    <link href="../fonts/themify-icons.css" rel="stylesheet" />
+    <!-- Lineicons -->
+    <link rel="stylesheet" href="../fonts/lineicons.css" />
+    <!-- Font Awaresome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- Slick.js -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Title</title>
+  </head>
+  <body>
+    <!-- loader -->
+    <div class="loader"></div>
+
+    <div id="main-wrapper">
+      <!-- Start Navigation -->
+      <div class="header">
+        <div class="container">
+          <nav class="navbar navbar-expand-xl p-0">
+            <a class="navbar-brand" href="#">
+              <img src="../img/logo.png" alt="logo" />
+            </a>
+            <button
+              class="navbar-toggler d-xl-none"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapsibleNavId"
+              aria-controls="collapsibleNavId"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="lni lni-menu fw-bold fs-4 border-dark"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+              <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">
+                    Home <i class="ti-angle-double-down fs-"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    Find Job <i class="ti-angle-double-down fs-"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    Candidates <i class="ti-angle-double-down fs-"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    Employers <i class="ti-angle-double-down fs-"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    Pages <i class="ti-angle-double-down fs-"></i>
+                  </a>
+                </li>
+              </ul>
+              <ul class="navbar-nav nav-right me-0 mb-lg-0 float-end">
+                <li class="addlisting nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="lni lni-power-switch me-1"></i>
+                    Logout
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- End Navigation -->
+
+      <!-- Start Dashboard -->
+      <div class="dashboard-wrap bg-light">
+        <!-- Start Sidebar -->
+        <div>
+          <a
+            class="mobNavigation"
+            data-bs-toggle="collapse"
+            href="#MobNav"
+            role="button"
+            aria-expanded="false"
+            aria-controls="MobNav"
+          >
+            <i class="fas fa-bars me-2"></i>Dashboard Navigation
+          </a>
+          <div class="collapse" id="MobNav">
+            <div class="dashboard-nav">
+              <div class="dashboard-inner">
+                <ul data-submenu-title="Candidate">
+                  <li>
+                    <a href="candidate-dashboard.html"
+                      ><i class="lni lni-dashboard me-2"></i>Dashboard
+                    </a>
+                  </li>
+                  <li>
+                    <a href="dashboard-saved-jobs.html">
+                      <i class="lni lni-bookmark me-2"></i>Bookmark Jobs
+                    </a>
+                  </li>
+                  <li>
+                    <a href="dashboard-applied-jobs.html"
+                      ><i class="lni lni-briefcase me-2"></i>Applied jobs</a
+                    >
+                  </li>
+                </ul>
+                <ul data-submenu-title="Employer">
+                  <li>
+                    <a href="dashboard-applied-jobs.html"
+                      ><i class="lni lni-circle-plus me-2"></i>Post New Job</a
+                    >
+                  </li>
+                  <li>
+                    <a href="dashboard-manage-jobs.html">
+                      <i class="lni lni-add-files me-2"></i>Manage Jobs
+                    </a>
+                  </li>
+                  <li>
+                    <a href="dashboard-manage-jobs.html">
+                      <i class="lni lni-briefcase-alt me-2"></i>Manage Applicant
+                    </a>
+                  </li>
+                </ul>
+                <ul data-submenu-title="My Accounts">
+                  <li class="active">
+                    <a href="dashboard-my-profile.html"
+                      ><i class="lni lni-user me-2"></i>My Profile
+                    </a>
+                  </li>
+                  <li>
+                    <a href="dashboard-change-password.html"
+                      ><i class="lni lni-lock-alt me-2"></i>Change Password</a
+                    >
+                  </li>
+                  <li>
+                    <a href="login.html"
+                      ><i class="lni lni-power-switch me-2"></i>Log Out</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Sidebar -->
+
+        <!-- Start Dashboard Content -->
+        <div class="dashboard-content">
+          <div class="dashboard-tlbar d-block mb-4">
+            <div class="row">
+              <div class="colxl-12 col-lg-12 col-md-12">
+                <h2 class="text-dark">My Profile</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="dashboard-widg-bar d-block">
+            <div class="row">
+              <div class="col-12">
+                <div class="bg-white rounded mb-4">
+                  <div class="br-bottom py-3 px-3">
+                    <h4 class="mb-0 text-dark fs-6">
+                      <i class="fa fa-user me-1 theme-cl fs-sm"></i>My Account
+                    </h4>
+                  </div>
+                  <div class="py-3 px-3">
+                    <form action="" class="row">
+                      <div class="col-12 col-md-3">
+                        <div class="custom-file avatar_uploads">
+                          <input
+                            type="file"
+                            class="custom-file-input"
+                            id="customFile"
+                          />
+                          <label class="custom-file-label" for="customFile"
+                            ><i class="fa fa-user"></i
+                          ></label>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-9">
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <div class="form-group">
+                              <label class="text-dark">Full Name</label>
+                              <input
+                                type="text"
+                                class="form-control rounded"
+                                value="Full Name"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-group">
+                              <label class="text-dark">Job Title</label>
+                              <input
+                                type="text"
+                                class="form-control rounded"
+                                value="Job Name"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-group">
+                              <label class="text-dark">Phone</label>
+                              <input
+                                type="text"
+                                class="form-control rounded"
+                                value="Phone"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-group">
+                              <label class="text-dark">Email</label>
+                              <input
+                                type="email"
+                                class="form-control rounded"
+                                value="uppcl@gmail.com"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-group">
+                              <label class="text-dark">Job Type</label>
+                              <select class="form-select rounded">
+                                <option>Choose Job Type</option>
+                                <option>Full Time</option>
+                                <option>Part Time</option>
+                                <option>Freelance</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-group">
+                              <label class="text-dark">Job Category</label>
+                              <select class="form-select rounded">
+                                <option>Choose Categories</option>
+                                <option>IT &amp; Software</option>
+                                <option>Bank Services</option>
+                                <option>Hospitals</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-group">
+                              <label class="text-dark">Experience</label>
+                              <select class="form-select rounded">
+                                <option>Select Experience</option>
+                                <option>Begginer</option>
+                                <option>01 Years</option>
+                                <option>02 Years</option>
+                                <option>03 Years</option>
+                                <option>04 Years</option>
+                                <option>05 Years</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-group">
+                              <label class="text-dark">Education</label>
+                              <input
+                                type="text"
+                                class="form-control rounded"
+                                value="Education"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-group">
+                              <label class="text-dark">Current Salary</label>
+                              <select class="form-select rounded">
+                                <option>10-20 K</option>
+                                <option>20-30 K</option>
+                                <option>30-40 K</option>
+                                <option>40-50 K</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-group">
+                              <label class="text-dark">Expected Salary</label>
+                              <select class="form-select rounded">
+                                <option>10-20 K</option>
+                                <option>20-30 K</option>
+                                <option>30-40 K</option>
+                                <option>40-50 K</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-group">
+                              <label class="text-dark">Age</label>
+                              <select class="form-select rounded">
+                                <option>20 Years+</option>
+                                <option>23+ Years</option>
+                                <option>25+ Years</option>
+                                <option>30+ Years</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-group">
+                              <label class="text-dark">Language</label>
+                              <input
+                                type="email"
+                                class="form-control rounded"
+                                value="e.x Englisg, Hindi"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <div class="form-group">
+                              <label class="text-dark">About Info</label>
+                              <textarea class="form-control with-light">
+At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</textarea
+                              >
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <div class="form-group">
+                              <button
+                                type="submit"
+                                class="btn py-3 px-4 text-white rounded theme-bg"
+                              >
+                                Save Changes
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="bg-white rounded mb-4">
+                  <div class="br-bottom py-3 px-3">
+                    <h4 class="mb-0 fs-6">
+                      <i class="ti-facebook me-1 theme-cl"></i>Social Accounts
+                    </h4>
+                  </div>
+                  <div class="py-3 px-3">
+                    <form class="row">
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="text-dark">Facebook</label>
+                          <input
+                            type="text"
+                            class="form-control rounded"
+                            placeholder="https://www.facebook.com/"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="text-dark">Twitter</label>
+                          <input
+                            type="text"
+                            class="form-control rounded"
+                            placeholder="https://www.twitter.com/"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="text-dark">LinkedIn</label>
+                          <input
+                            type="text"
+                            class="form-control rounded"
+                            placeholder="https://www.linkedin.com/"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="text-dark">GooglePlus</label>
+                          <input
+                            type="text"
+                            class="form-control rounded"
+                            placeholder="https://www.gplus.com/"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-xl-12 col-lg-12">
+                        <div class="form-group">
+                          <button
+                            type="submit"
+                            class="btn py-3 px-4 text-white rounded theme-bg"
+                          >
+                            Save Changes
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="bg-white rounded mb-4">
+                  <div class="br-bottom py-3 px-3">
+                    <h4 class="mb-0 fs-6">
+                      <i class="fas fa-lock me-1 theme-cl"></i>
+                      Contact Information
+                    </h4>
+                  </div>
+                  <div class="py-3 px-3">
+                    <form class="row">
+                      <div class="col-md-12 col-lg-6">
+                        <div class="form-group">
+                          <label class="text-dark">Country</label>
+                          <select class="form-select rounded">
+                            <option>Australia</option>
+                            <option>United States</option>
+                            <option>United Kingdom</option>
+                            <option>China</option>
+                            <option>India</option>
+                            <option>Pakistan</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-12 col-lg-6">
+                        <div class="form-group">
+                          <label class="text-dark">City</label>
+                          <select class="form-select rounded">
+                            <option>Madhya Pradesh</option>
+                            <option>Punjab</option>
+                            <option>Uttar Pradesh</option>
+                            <option>Arudachal</option>
+                            <option>Nepal</option>
+                            <option>Afganistan</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="text-dark">Full Address</label>
+                          <input
+                            type="password"
+                            class="form-control rounded"
+                            placeholder="#10 Marke Juger, SBI Road"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-12 col-lg-6">
+                        <div class="form-group">
+                          <label class="text-dark">Latitude</label>
+                          <input
+                            type="password"
+                            class="form-control rounded"
+                            placeholder="#10 Marke Juger, SBI Road"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-12 col-lg-6">
+                        <div class="form-group">
+                          <label class="text-dark">Longitude</label>
+                          <input
+                            type="password"
+                            class="form-control rounded"
+                            placeholder="#10 Marke Juger, SBI Road"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="form-group">
+                          <button
+                            type="submit"
+                            class="btn py-3 px-4 text-white rounded theme-bg"
+                          >
+                            Save Changes
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Dashboard Content -->
+      </div>
+      <!-- End Dashboard -->
+
+      <!-- BackToTop Button -->
+      <a href="#" id="backToTop" class="top-scroll">
+        <span class="ti-arrow-up"></span>
+      </a>
+    </div>
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Slick.js -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+
+    <script src="../js/app.js"></script>
+  </body>
+</html>

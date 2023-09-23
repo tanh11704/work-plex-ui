@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Themify Icons -->
+    <link href="../fonts/themify-icons.css" rel="stylesheet" />
+    <!-- Lineicons -->
+    <link rel="stylesheet" href="../fonts/lineicons.css" />
+    <!-- Font Awaresome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- Slick.js -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Title</title>
+  </head>
+  <body>
+    <!-- loader -->
+    <div class="loader"></div>
+    <div id="main-wrapper">
+      <!-- Start Navigation -->
+      <div class="header">
+        <div class="container">
+          <nav class="navbar navbar-expand-xl p-0">
+            <a class="navbar-brand" href="#">
+              <img src="../img/logo.png" alt="logo" />
+            </a>
+            <button
+              class="navbar-toggler d-xl-none"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapsibleNavId"
+              aria-controls="collapsibleNavId"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="lni lni-menu fw-bold fs-4 border-dark"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+              <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">
+                    Home <i class="ti-angle-double-down fs-"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    Find Job <i class="ti-angle-double-down fs-"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    Candidates <i class="ti-angle-double-down fs-"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    Employers <i class="ti-angle-double-down fs-"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    Pages <i class="ti-angle-double-down fs-"></i>
+                  </a>
+                </li>
+              </ul>
+              <ul class="navbar-nav nav-right me-0 mb-lg-0 float-end">
+                <li class="addlisting nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="lni lni-power-switch me-1"></i>
+                    Logout
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- End Navigation -->
+
+      <!-- Start Dashboard -->
+      <div class="dashboard-wrap bg-light">
+        <!-- Start Sidebar -->
+        <div>
+          <a
+            class="mobNavigation"
+            data-bs-toggle="collapse"
+            href="#MobNav"
+            role="button"
+            aria-expanded="false"
+            aria-controls="MobNav"
+          >
+            <i class="fas fa-bars me-2"></i>Dashboard Navigation
+          </a>
+          <div class="collapse" id="MobNav">
+            <div class="dashboard-nav">
+              <div class="dashboard-inner">
+                <ul data-submenu-title="Candidate">
+                  <li class="active">
+                    <a href="candidate-dashboard.html"
+                      ><i class="lni lni-dashboard me-2"></i>Dashboard
+                    </a>
+                  </li>
+                  <li>
+                    <a href="dashboard-saved-jobs.html">
+                      <i class="lni lni-bookmark me-2"></i>Bookmark Jobs
+                    </a>
+                  </li>
+                  <li>
+                    <a href="dashboard-applied-jobs.html"
+                      ><i class="lni lni-briefcase me-2"></i>Applied jobs</a
+                    >
+                  </li>
+                </ul>
+                <ul data-submenu-title="Employer">
+                  <li>
+                    <a href="dashboard-applied-jobs.html"
+                      ><i class="lni lni-circle-plus me-2"></i>Post New Job</a
+                    >
+                  </li>
+                  <li>
+                    <a href="dashboard-manage-jobs.html">
+                      <i class="lni lni-add-files me-2"></i>Manage Jobs
+                    </a>
+                  </li>
+                  <li>
+                    <a href="dashboard-manage-jobs.html">
+                      <i class="lni lni-briefcase-alt me-2"></i>Manage Applicant
+                    </a>
+                  </li>
+                </ul>
+                <ul data-submenu-title="My Accounts">
+                  <li>
+                    <a href="dashboard-my-profile.html"
+                      ><i class="lni lni-user me-2"></i>My Profile
+                    </a>
+                  </li>
+                  <li>
+                    <a href="dashboard-change-password.html"
+                      ><i class="lni lni-lock-alt me-2"></i>Change Password</a
+                    >
+                  </li>
+                  <li>
+                    <a href="login.html"
+                      ><i class="lni lni-power-switch me-2"></i>Log Out</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Sidebar -->
+
+        <!-- Start Dashboard Content -->
+        <div class="dashboard-content">
+          <div class="dashboard-tlbar d-block mb-4">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="text-dark">Hello, Phuoc Anh</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="dashboard-widg-bar d-block">
+            <div class="row">
+              <div class="col-lg-3 col-6">
+                <div class="dash-widgets py-5 px-4 bg-info rounded">
+                  <h2 class="ft-medium mb-1 fs-xl text-light">46</h2>
+                  <p class="p-0 m-0 text-light fs-md">Applied Jobs</p>
+                  <i class="lni lni-empty-file"></i>
+                </div>
+              </div>
+              <div class="col-lg-3 col-6">
+                <div class="dash-widgets py-5 px-4 bg-dark rounded">
+                  <h2 class="ft-medium mb-1 fs-xl text-light">87</h2>
+                  <p class="p-0 m-0 text-light fs-md">Notifications</p>
+                  <i class="lni lni-users"></i>
+                </div>
+              </div>
+              <div class="col-lg-3 col-6">
+                <div class="dash-widgets py-5 px-4 bg-warning rounded">
+                  <h2 class="ft-medium mb-1 fs-xl text-light">312</h2>
+                  <p class="p-0 m-0 text-light fs-md">Alert Jobs</p>
+                  <i class="lni lni-bar-chart"></i>
+                </div>
+              </div>
+              <div class="col-lg-3 col-6">
+                <div class="dash-widgets py-5 px-4 bg-purple rounded">
+                  <h2 class="ft-medium mb-1 fs-xl text-light">32</h2>
+                  <p class="p-0 m-0 text-light fs-md">Bookmark jobs</p>
+                  <i class="lni lni-heart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Dashboard Content -->
+      </div>
+      <!-- End Dashboard -->
+
+      <!-- BackToTop Button -->
+      <a href="#" id="backToTop" class="top-scroll">
+        <span class="ti-arrow-up"></span>
+      </a>
+    </div>
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Slick.js -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+
+    <script src="../js/app.js"></script>
+  </body>
+</html>
